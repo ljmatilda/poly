@@ -1,0 +1,10 @@
+{% load static %}
+<a href="/polyflow/" stroke="CadetBlue">回上一页</a>
+
+{% block content %}
+    <form action="" method="post" enctype="multipart/form-data">
+     {{ form.as_p }}
+      {% csrf_token %}
+      <p><input type="submit" class="btn btn-success" value="保存数据"></p>
+    </form>
+{% endblock %}
